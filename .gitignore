@@ -1,0 +1,45 @@
+# Ignore node_modules
+node_modules/
+/node_modules/
+web/node_modules/
+
+# Ignore build outputs
+/target/
+backend/target/
+/build/
+web/build/
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# Ignore OS specific files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore package lock files (optional)
+package-lock.json
+web/package-lock.json
+
+# Ignore Maven wrapper (optional)
+.mvn/
+mvnw
+mvnw.cmd
+
+# Keep but ignore changes to application.properties (if you have sensitive data)
+# backend/src/main/resources/application.properties
