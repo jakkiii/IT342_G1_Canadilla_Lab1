@@ -7,6 +7,7 @@ function Dashboard() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [showLogoutModal, setShowLogoutModal] = useState(false);
 
   useEffect(() => {
     fetchUserData();
@@ -27,9 +28,17 @@ function Dashboard() {
     }
   };
 
-  const handleLogout = () => {
+  const handleLogoutClick = () => {
+    setShowLogoutModal(true);
+  };
+
+  const confirmLogout = () => {
     authService.logout();
     navigate('/login');
+  };
+
+  const cancelLogout = () => {
+    setShowLogoutModal(false);
   };
 
   if (loading) {
@@ -52,7 +61,7 @@ function Dashboard() {
     <div className="dashboard-container">
       <div className="dashboard-header">
         <h2>User Profile</h2>
-        <button onClick={handleLogout} className="logout-btn">
+        <button onClick={handleLogoutClick} className="logout-btn">
           Logout
         </button>
       </div>
@@ -100,6 +109,23 @@ function Dashboard() {
             <span className="info-value">
               {new Date(user.updatedAt).toLocaleDateString()}
             </span>
+          </div>
+        </div>
+      )}
+
+      {showLogoutModal && (
+        <div className="modal-overlay" onClick={cancelLogout}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <h3>Confirm Logout</h3>
+            <p>Are you sure you want to logout?</p>
+            <div className="modal-buttons">
+              <button onClick={confirmLogout} className="btn-confirm">
+                Yes, Logout
+              </button>
+              <button onClick={cancelLogout} className="btn-cancel">
+                Cancel
+              </button>
+            </div>
           </div>
         </div>
       )}
