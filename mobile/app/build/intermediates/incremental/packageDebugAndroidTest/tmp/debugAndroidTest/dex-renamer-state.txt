@@ -1,0 +1,7 @@
+#Sat Feb 14 10:09:00 CST 2026
+base.0=Z\:\\L13Y09W28\\IT342_G1_Canadilla_Lab1\\mobile\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
+base.1=Z\:\\L13Y09W28\\IT342_G1_Canadilla_Lab1\\mobile\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+path.0=classes.dex
+path.1=0/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

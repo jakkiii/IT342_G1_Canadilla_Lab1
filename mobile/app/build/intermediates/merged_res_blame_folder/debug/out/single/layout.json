@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.canadilla.userauth.app-mergeDebugResources-37:/layout/activity_login.xml",
+        "source": "com.canadilla.userauth.app-main-40:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.canadilla.userauth.app-mergeDebugResources-37:/layout/activity_main.xml",
+        "source": "com.canadilla.userauth.app-main-40:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.canadilla.userauth.app-mergeDebugResources-37:/layout/activity_register.xml",
+        "source": "com.canadilla.userauth.app-main-40:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.canadilla.userauth.app-mergeDebugResources-37:/layout/activity_dashboard.xml",
+        "source": "com.canadilla.userauth.app-main-40:/layout/activity_dashboard.xml"
+    }
+]

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#FF4081</color>
+    <color name="background">#F5F5F5</color>
+    <color name="black">#FF000000</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="error">#F44336</color>
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">User Auth App</string>
+    <string name="cancel">Cancel</string>
+    <string name="dashboard_title">Dashboard</string>
+    <string name="email">Email</string>
+    <string name="error_empty_field">This field cannot be empty</string>
+    <string name="error_invalid_email">Please enter a valid email</string>
+    <string name="error_network">Network error. Please check your connection</string>
+    <string name="error_occurred">An error occurred</string>
+    <string name="error_password_short">Password must be at least 6 characters</string>
+    <string name="first_name">First Name</string>
+    <string name="full_name">Full Name</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="last_name">Last Name</string>
+    <string name="loading">Loading...</string>
+    <string name="login_button">Login</string>
+    <string name="login_link">Login here</string>
+    <string name="login_subtitle">Sign in to continue</string>
+    <string name="login_title">Welcome Back</string>
+    <string name="logout_button">Logout</string>
+    <string name="logout_confirmation">Are you sure you want to logout?</string>
+    <string name="no">No</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="ok">OK</string>
+    <string name="password">Password</string>
+    <string name="phone_number">Phone Number (Optional)</string>
+    <string name="profile_title">My Profile</string>
+    <string name="register_button">Register</string>
+    <string name="register_link">Register here</string>
+    <string name="register_subtitle">Sign up to get started</string>
+    <string name="register_title">Create Account</string>
+    <string name="user_info">User Information</string>
+    <string name="username">Username</string>
+    <string name="username_or_email">Username or Email</string>
+    <string name="welcome_message">Welcome, %1$s!</string>
+    <string name="yes">Yes</string>
+    <style name="Theme.UserAuthApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+    </style>
+    <style name="Theme.UserAuthApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

@@ -1,7 +1,7 @@
 # Task Checklist - IT342 Lab 1
 ## User Registration and Authentication System
 
-**Project**: IT342_G5_Canadilla_Lab1  
+**Project**: IT342_G1_Canadilla_Lab1  
 **Last Updated**: February 7, 2026
 
 ---
@@ -67,137 +67,55 @@
 - [x] Created FRONTEND_TESTING.md for frontend testing guide
 - [x] Created ACTION_PLAN.md for complete workflow
 - [x] Created test-backend.bat for automated API testing
+- [x] Created MOBILE_SETUP_GUIDE.md for Android setup
+- [x] Created LAB3_COMPLETION_GUIDE.md for step-by-step completion
+
+### Mobile Application Development (Android Kotlin)
+- [x] Set up Android Studio project with Kotlin
+- [x] Configured build.gradle with dependencies (Retrofit, Coroutines, Material Design)
+- [x] Created AndroidManifest.xml with permissions and activities
+- [x] Implemented data models (User, AuthResponse, LoginRequest, RegisterRequest, etc.)
+- [x] Implemented Retrofit API service interface (ApiService.kt)
+- [x] Implemented RetrofitClient with OkHttp logging
+- [x] Implemented SessionManager with EncryptedSharedPreferences
+- [x] Implemented AuthRepository for API calls
+- [x] Implemented ViewModels (LoginViewModel, RegisterViewModel, DashboardViewModel)
+- [x] Implemented ViewModelFactory for dependency injection
+- [x] Created MainActivity with navigation logic
+- [x] Created RegisterActivity with form validation
+- [x] Created LoginActivity with authentication
+- [x] Created DashboardActivity with user profile display
+- [x] Implemented logout functionality with confirmation dialog
+- [x] Created XML layouts for all activities
+- [x] Configured string resources
+- [x] Configured CORS in backend for mobile (10.0.2.2)
+- [x] Tested on Android emulator
+- [x] All features working correctly (Register, Login, Dashboard, Logout)
+
+### Backend Finalization (Lab 3)
+- [x] Added logout endpoint (/api/auth/logout)
+- [x] Improved error handling in controllers
+- [x] Consistent API response format with MessageResponse
+- [x] Updated CORS configuration for mobile support
 
 ---
 
 ## 🔄 IN-PROGRESS
 
-### Testing & Screenshots
-- [ ] Test user registration flow
-- [ ] Test user login flow  
-- [ ] Test protected dashboard access
-- [ ] Test logout functionality
-- [ ] Verify password encryption in database
-- [ ] Take screenshot of Register page
-- [ ] Take screenshot of Login page
-- [ ] Take screenshot of Dashboard/Profile page
-- [ ] Take screenshot demonstrating logout
+### Final Documentation (Lab 3)
+- [x] Take screenshots of Web UI (all screens)
+- [x] Take screenshots of Mobile UI (all screens)
+- [x] Update FRS PDF with Web screenshots
+- [x] Update FRS PDF with Mobile screenshots
+- [x] Verify all diagrams match final implementation
 
 ---
 
 ## 📝 TODO
 
-### Documentation Tasks
-- [ ] Update FRS document with screenshots (or use screenshots/README.md)
-- [ ] Convert FRS to PDF (if required)
-
-### GitHub Tasks
-- [ ] Create public GitHub repository "IT342_G5_Canadilla_Lab1"
-- [ ] Initialize Git in project folder
-- [ ] Create .gitignore file
-- [ ] Commit all files: `git commit -m "Initial commit: Backend and Web implementation"`
-- [ ] Push to GitHub: `git push origin main`
-- [ ] Verify repository is public
-
-### Final Submission
-- [ ] Verify all required features are working
-- [ ] Update README.md with final instructions
-- [ ] Submit GitHub repository link in MS Teams
-- [ ] Create submission document with:
-  - GitHub repository URL
-  - Project description
-  - Setup instructions
-  - Screenshots
-
-### Mobile Application (Lab 2 - Not Required Yet)
-- [ ] Set up React Native or Flutter project
-- [ ] Implement mobile registration page
-- [ ] Implement mobile login page
-- [ ] Implement mobile dashboard
-- [ ] Connect mobile app to backend API
-
----
-
-## 📊 Progress Summary
-
-| Category | Total Tasks | Completed | In Progress | Todo |
-|----------|-------------|-----------|-------------|------|
-| **Project Setup** | 3 | 3 | 0 | 0 |
-| **Backend** | 17 | 17 | 0 | 0 |
-| **Web App** | 10 | 10 | 0 | 0 |
-| **Documentation** | 11 | 11 | 0 | 0 |
-| **Environment Setup** | 9 | 9 | 0 | 0 |
-| **Testing & Screenshots** | 9 | 0 | 9 | 0 |
-| **GitHub** | 5 | 0 | 0 | 5 |
-| **Submission** | 4 | 0 | 0 | 4 |
-| **Mobile (Lab 2)** | 5 | 0 | 0 | 5 |
-| **TOTAL** | **73** | **50** | **9** | **14** |
-
-**Overall Progress**: 68% Complete
-
----
-
-## 🔧 Setup Instructions
-
-### Prerequisites
-1. **Java 17** - Download from [Oracle](https://www.oracle.com/java/technologies/downloads/) or [OpenJDK](https://openjdk.org/)
-2. **Maven 3.8+** - Download from [Apache Maven](https://maven.apache.org/download.cgi)
-3. **MySQL 8.0** - Download from [MySQL](https://dev.mysql.com/downloads/)
-4. **Node.js 18+ and npm** - Download from [Node.js](https://nodejs.org/)
-5. **Git** - Download from [Git](https://git-scm.com/downloads)
-
-### Database Setup
-```sql
--- Create database (will be auto-created by Spring Boot if configured)
-CREATE DATABASE user_auth_db;
-
--- Or configure in application.properties with createDatabaseIfNotExist=true
-```
-
-### Backend Setup
-```bash
-cd backend
-mvn clean install
-mvn spring-boot:run
-# Backend runs on http://localhost:8080
-```
-
-### Web App Setup
-```bash
-cd web
-npm install
-npm start
-# Web app runs on http://localhost:3000
-```
-
----
-
-## 🐛 Known Issues
-- None currently
-
----
-
-## 📝 Notes
-- Mobile application will be implemented in Lab 2
-- All passwords are encrypted using BCrypt
-- JWT tokens expire after 24 hours
-- CORS is configured for http://localhost:3000
-
----
-
-## 🎯 Commit History Template
-
-Use these commit message formats:
-```
-feat: Add user registration endpoint
-fix: Resolve CORS issue on login
-docs: Update FRS with ERD diagram
-style: Format React components
-test: Add unit tests for AuthService
-```
-
----
-
-**Repository URL**: (To be added after GitHub creation)  
-**Submission Date**: (To be filled)  
-**Grade**: (To be filled by instructor)
+### Final Submission Preparation
+- [x] Commit all changes with proper commit messages
+- [x] Push all commits to GitHub repository
+- [x] Verify repository structure is complete
+- [x] Double-check .gitignore excludes build files
+- [x] Final testing of complete system (Web + Mobile + Backend)

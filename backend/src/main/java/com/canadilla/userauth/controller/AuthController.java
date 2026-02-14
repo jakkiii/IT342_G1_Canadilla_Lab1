@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "http://10.0.2.2:3000"})
 public class AuthController {
 
     @Autowired
@@ -38,5 +38,12 @@ public class AuthController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
                     .body(new MessageResponse("Invalid username/email or password"));
         }
+    }
+
+    @PostMapping("/logout")
+    public ResponseEntity<?> logout() {
+        // For JWT, logout is handled client-side by removing the token
+        // This endpoint is for consistency and can be extended for token blacklisting
+        return ResponseEntity.ok(new MessageResponse("Logged out successfully"));
     }
 }
